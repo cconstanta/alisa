@@ -111,12 +111,21 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  // Создание карты
+  // Создание карты с CSS-градиентами
   function createMap() {
     mapContainer.innerHTML = `
       <div class="wonderland-map">
-        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-             alt="Карта Страны Чудес" class="map-image">
+        <div class="custom-map">
+          <!-- Декоративные элементы карты -->
+          <div class="map-path path-1"></div>
+          <div class="map-path path-2"></div>
+          <div class="map-path path-3"></div>
+          <div class="map-tree tree-1"></div>
+          <div class="map-tree tree-2"></div>
+          <div class="map-tree tree-3"></div>
+          <div class="map-mushroom mushroom-1"></div>
+          <div class="map-mushroom mushroom-2"></div>
+        </div>
         <div class="map-overlay"></div>
       </div>
     `;
