@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Алиса в Стране Чудес - Официальный архив</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Психоделические шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eater&family=Henny+Penny&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Хедер с навигацией -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-symbol">🗝️</span>
+          <span class="logo-text">Архив Чудес</span>
+        </div>
+
+        <!-- Навигация для десктопа -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#universe">Вселенная</a></li>
+            <li><a href="#characters">Персонажи</a></li>
+            <li><a href="#locations">Карта</a></li>
+            <li><a href="#quotes">Цитаты</a></li>
+            <li><a href="#ask" class="cta-button">Задать вопрос</a></li>
+          </ul>
+        </nav>
+
+        <!-- Бургер-меню для мобильных -->
+        <button class="burger-menu" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Мобильное меню -->
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#universe">Вселенная</a></li>
+            <li><a href="#characters">Персонажи</a></li>
+            <li><a href="#locations">Карта</a></li>
+            <li><a href="#quotes">Цитаты</a></li>
+            <li><a href="#ask">Задать вопрос</a></li>
+            <li><button class="close-menu">×</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Секции сайта -->
+    <main>
+      <!-- Герой-секция -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <div class="vintage-stamp">
+            <h1>АЛИСА В СТРАНЕ ЧУДЕС</h1>
+            <p class="subtitle">Официальный интерактивный архив</p>
+          </div>
+          <p class="hero-text">
+            Спуститесь в кроличью нору, чтобы исследовать мир безумия, тайн и
+            удивительных существ. Этот архив хранит каждую причудливую деталь
+            бессмертной сказки Льюиса Кэрролла.
+          </p>
+          <a href="#characters" class="main-cta">Начать путешествие</a>
+        </div>
+        <div class="floating-cards">
+          <div class="card card-hearts">♥</div>
+          <div class="card card-spades">♠</div>
+          <div class="card card-clubs">♣</div>
+          <div class="card card-diamonds">♦</div>
+        </div>
+      </section>
+
+      <!-- Секция "О вселенной" -->
+      <section class="universe-section" id="universe">
+        <div class="container">
+          <h2 class="section-title">Путь в нору кролика</h2>
+          <div class="universe-content">
+            <div class="universe-text">
+              <p class="first-letter">
+                «Алиса начала сильно скучать, сидя с сестрой на берегу реки...»
+              </p>
+              <p>
+                Так начинается одно из самых загадочных и безумных путешествий в
+                истории литературы. Страна Чудес — это мир, где логика
+                перевёрнута с ног на голову, животные говорят, а чаепития
+                никогда не заканчиваются.
+              </p>
+              <p>
+                Этот архив создан, чтобы сохранить каждую причудливую деталь
+                этой удивительной вселенной. От Белого Кролика с его вечной
+                спешкой до Чеширского Кота, оставляющего после себя лишь улыбку.
+              </p>
+            </div>
+            <div class="universe-image">
+              <div class="vintage-frame">
+                <div class="frame-content">
+                  <div class="alice-silhouette"></div>
+                  <div class="rabbit-hole"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Персонажи" -->
+      <section class="characters-section" id="characters">
+        <div class="container">
+          <h2 class="section-title">Обитатели Страны Чудес</h2>
+          <p class="section-subtitle">
+            Кликните на портрет, чтобы узнать все секреты персонажа
+          </p>
+
+          <div class="characters-grid">
+            <!-- Карточки будут генерироваться через JavaScript -->
+          </div>
+
+          <!-- Модальное окно персонажа -->
+          <div class="character-modal" id="characterModal">
+            <div class="modal-content">
+              <button class="close-modal">×</button>
+              <div class="modal-body">
+                <div class="modal-avatar">
+                  <!-- Аватар загружается через JS -->
+                </div>
+                <div class="modal-info">
+                  <!-- Информация загружается через JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Карта" -->
+      <section class="locations-section" id="locations">
+        <div class="container">
+          <h2 class="section-title">Карта безумия</h2>
+          <p class="section-subtitle">
+            Кликните на маркер, чтобы исследовать локацию
+          </p>
+
+          <div class="locations-container">
+            <div class="locations-map">
+              <!-- Интерактивная карта будет генерироваться через JavaScript -->
+            </div>
+            <div class="locations-info">
+              <!-- Информация о локации будет загружаться через JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Цитаты" -->
+      <section class="quotes-section" id="quotes">
+        <div class="container">
+          <h2 class="section-title">Безумная мудрость</h2>
+          <p class="section-subtitle">
+            Самые запоминающиеся цитаты из путешествия
+          </p>
+
+          <div class="quotes-container">
+            <div class="quote-slider">
+              <div class="quote-slide active">
+                <div class="quote-icon">😸</div>
+                <blockquote class="quote-text">
+                  «Здесь все не в своём уме — и ты, и я… Иначе как бы мы здесь
+                  оказались?»
+                </blockquote>
+                <p class="quote-author">— Чеширский Кот</p>
+              </div>
+
+              <div class="quote-slide">
+                <div class="quote-icon">🎩</div>
+                <blockquote class="quote-text">
+                  «Почему ворон похож на конторку?»
+                </blockquote>
+                <p class="quote-author">— Безумный Шляпник</p>
+              </div>
+
+              <div class="quote-slide">
+                <div class="quote-icon">👑</div>
+                <blockquote class="quote-text">
+                  «Голову с плеч! Немедленно!»
+                </blockquote>
+                <p class="quote-author">— Королева Червей</p>
+              </div>
+
+              <div class="quote-slide">
+                <div class="quote-icon">🐇</div>
+                <blockquote class="quote-text">
+                  «Ах, боже мой, боже мой! Как я опаздываю!»
+                </blockquote>
+                <p class="quote-author">— Белый Кролик</p>
+              </div>
+            </div>
+
+            <div class="quote-controls">
+              <button class="quote-prev">‹</button>
+              <div class="quote-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button class="quote-next">›</button>
+            </div>
+          </div>
+
+          <div class="random-quote">
+            <button class="random-quote-btn">
+              <span class="btn-icon">🎲</span>
+              <span class="btn-text">Случайная цитата</span>
+            </button>
+            <div class="random-quote-result">
+              <!-- Случайная цитата появится здесь -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция "Форма" -->
+      <section class="form-section" id="ask">
+        <div class="container">
+          <h2 class="section-title">Спросить оракула</h2>
+          <p class="section-subtitle">
+            Есть странный вопрос? Спросите у Гусеницы
+          </p>
+
+          <form class="oracle-form" id="questionForm">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Но кто вы, собственно?"
+                required
+              />
+              <div class="form-hint">
+                Настоящее имя или вымышленное — не важно
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваш email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="для ответа через кроличью почту"
+                required
+              />
+              <div class="error-message" id="emailError">
+                Любопытно... Этот адрес выглядит странно
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="question">Ваш вопрос</label>
+              <textarea
+                id="question"
+                placeholder="Что вас озадачивает?"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              <span class="button-text">Спросить у Гусеницы</span>
+              <span class="button-icon">🍄</span>
+            </button>
+          </form>
+
+          <div class="form-success" id="successMessage">
+            <div class="success-content">
+              <div class="cheshire-smile">😸</div>
+              <h3>Ваш вопрос отправился в кроличью нору</h3>
+              <p>Ответ может прийти к чаю. Или никогда.</p>
+              <button class="reset-form">Задать ещё вопрос</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">Архив Страны Чудес</div>
+            <p class="footer-description">
+              Неофициальный интерактивный проект по мотивам шедевра Льюиса
+              Кэрролла. Погрузитесь в мир безумия и откройте все секреты
+              удивительной вселенной.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Исследовать</h4>
+            <ul>
+              <li><a href="#universe">Вселенная</a></li>
+              <li><a href="#characters">Персонажи</a></li>
+              <li><a href="#locations">Карта</a></li>
+              <li><a href="#quotes">Цитаты</a></li>
+              <li><a href="#ask">Задать вопрос</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h4>Следить за безумием</h4>
+            <div class="social-icons">
+              <a
+                href="#"
+                class="social-icon"
+                title="Чешир в Твиттере"
+                aria-label="Twitter"
+                >😸</a
+              >
+              <a
+                href="#"
+                class="social-icon"
+                title="Кролик в Инстаграме"
+                aria-label="Instagram"
+                >🐇</a
+              >
+              <a
+                href="#"
+                class="social-icon"
+                title="Шляпник в ТикТоке"
+                aria-label="TikTok"
+                >🎩</a
+              >
+              <a
+                href="#"
+                class="social-icon"
+                title="Гусеница на YouTube"
+                aria-label="YouTube"
+                >🐛</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            © 1865 (примерно) Льюис Кэрролл. Всяческое безумие сохранено.
+          </p>
+          <p class="disclaimer">
+            Этот сайт — дань уважения оригинальному произведению. Все
+            иллюстрации в стиле Джона Тенниела. Фоновые изображения с Unsplash.
+          </p>
+          <p class="disclaimer">
+            <small
+              >Проект создан для образовательных целей и не является
+              официальным.</small
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/quotes.js"></script>
+  </body>
+</html>
