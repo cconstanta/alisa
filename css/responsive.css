@@ -1,0 +1,135 @@
+/* ===== ПЛАНШЕТ (768px - 1024px) ===== */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .characters-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .universe-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ===== МОБИЛЬНЫЙ (до 768px) ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    padding: 80px 15px 40px;
+  }
+
+  .vintage-stamp {
+    padding: 2rem;
+  }
+
+  .vintage-stamp::before {
+    border-width: 4px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .characters-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .character-card {
+    padding: 1.5rem;
+  }
+
+  .character-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .modal-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .oracle-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .floating-cards .card {
+    font-size: 2rem;
+  }
+}
+
+/* ===== МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+  }
+
+  .characters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-nav {
+    width: 100%;
+  }
+
+  .main-cta {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .form-section,
+  .universe-section,
+  .characters-section {
+    padding: 60px 0;
+  }
+}
