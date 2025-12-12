@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function sendForm(formData) {
     try {
       // ВАШ ENDPOINT URL ЗДЕСЬ ↓
-      const response = await fetch("https://formspree.io/f/xrbnrgzq", {
+      const response = await fetch("https://formspree.io/f/mdkqyogd", {
         method: "POST",
         headers: {
           Accept: "application/json",
